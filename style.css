@@ -1,0 +1,55 @@
+:root {
+  color-scheme: dark;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #0b1530 0%, #05060f 70%, #02030a 100%);
+}
+
+#scene {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#hud {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: color-mix(in oklab, #05070f 68%, transparent);
+  border: 1px solid color-mix(in oklab, #59f4ff 40%, transparent);
+  backdrop-filter: blur(10px);
+  color: #dff6ff;
+  box-shadow: 0 0 28px #3f8fd155;
+}
+
+#hud h1 {
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+#hud p {
+  margin: 0;
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+#telemetry {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Neon Apex 3D Racing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <h1>Neon Apex</h1>
+      <p>W/S: accelerate &amp; brake · A/D: steer · Space: handbrake · R: reset</p>
+      <div id="telemetry">
+        <span id="speed">0 km/h</span>
+        <span id="lap">Lap 1</span>
+      </div>
+    </div>
+    <canvas id="scene"></canvas>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
